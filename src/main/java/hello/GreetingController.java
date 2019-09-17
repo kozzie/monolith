@@ -39,7 +39,7 @@ public class GreetingController {
         Thread.sleep(250L);
 
         //Post to downstream service
-        String rs = restTemplate.postForEntity("http://localhost:9393/ServiceD", new HttpEntity(header), String.class).getBody();
+        String rs = restTemplate.postForEntity("http://localhost:1111/ServiceD", new HttpEntity(header), String.class).getBody();
 
         return rs;
     }
